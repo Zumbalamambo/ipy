@@ -8,7 +8,7 @@ shenbo@hotmail.com
 @ 2013.01.20
 """
 
-import sys, urllib2, time
+import os, sys, urllib2, time
 
 # kk hosts
 kk_hosts = '# kk hosts start\n' \
@@ -30,14 +30,22 @@ try:
 except urllib2.HTTPError as e:
     print e
     raw_input()
-    sys.exit()
 
 t = time.strftime('%Y-%m-%d, %H:%M:%S',time.localtime(time.time()))
 
 hosts = kk_hosts + ipv4_hosts + '\n\n##hosts updated @ ' + t
 
-f = file(hosts_file_dir, 'w')
-f.write(hosts)
-f.close()
+try:
+    f = file(hosts_file_dir, 'w')
+    f.write(hosts)
+    f.close()
+    raw_input('hosts updated @ ' + t + ' !\npress enter!')
+except IOError as e:
+    print e
+finally:
+    f = file('C:\Users\shenbo\Desktop\hosts', 'w')
+    f.write(hosts)
+    print 'find the host file on your desktop!'
+    f.close()
+    raw_input()
 
-raw_input('hosts updated @ ' + t + ' !\npress enter!')
