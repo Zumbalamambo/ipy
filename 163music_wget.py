@@ -1,12 +1,12 @@
-#!/usr/bin/env python2
-# vim: set file encoding=gbk
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import requests
 import md5
 import time
 import wget
 
-# ¼ÓÃÜ¸èÇúID
+# åŠ å¯†æ­Œæ›²ID
 def encrypted_id(id):
     byte1 = bytearray('3go8&$8*3*3h0k(2)2')
     byte2 = bytearray(id)
@@ -20,11 +20,11 @@ def encrypted_id(id):
     result = result.replace('+', '-')
     return result
 
-# »ñÈ¡¸èÇúµÄÏÂÔØµØÖ·
+# è·å–æ­Œæ›²çš„ä¸‹è½½åœ°å€
 # http://m1.music.126.net/[encrypted_song_id]/[song_dfsId].mp3
 # http://p1.music.126.net/[encrypted_song_id]/[song_dfsId].mp3
-# [song_dfsId]          Îª¸èÇúid£¬²»Í¬±ÈÌØÂÊÓĞ²»Í¬µÄid
-# [encrypted_song_id]   Îªsong_dfsId¼ÓÃÜºóµÄ×Ö·û´®
+# [song_dfsId]          ä¸ºæ­Œæ›²idï¼Œä¸åŒæ¯”ç‰¹ç‡æœ‰ä¸åŒçš„id
+# [encrypted_song_id]   ä¸ºsong_dfsIdåŠ å¯†åçš„å­—ç¬¦ä¸²
 def get_mp3url(i):
     for q in ('hMusic', 'mMusic', 'lMusic'):
         if i[q]:
@@ -34,9 +34,9 @@ def get_mp3url(i):
             return mp3url
     return None
 
-# »ñÈ¡¸èµ¥ÀïµÄËùÓĞ¸èÇúĞÅÏ¢
+# è·å–æ­Œå•é‡Œçš„æ‰€æœ‰æ­Œæ›²ä¿¡æ¯
 # http://music.163.com/api/playlist/detail?id=[playlist_id]"
-# [playlist_id]     Îª¸èµ¥id
+# [playlist_id]     ä¸ºæ­Œå•id
 def get_song_infos(id):
     url_playlist = "http://music.163.com/api/playlist/detail?id=%s"
 
@@ -56,7 +56,7 @@ def get_song_infos(id):
 
     songs_json = ss.get(url_playlist % id).json()
     songs_list = songs_json['result']['tracks']
-    print u'>> ¸èµ¥ÖĞ¹²ÓĞ%sÊ×¸èÇú.' % len(songs_list)
+    print u'>> æ­Œå•ä¸­å…±æœ‰%sé¦–æ­Œæ›².' % len(songs_list)
 
     song_infos = []
     for i in songs_list:
@@ -70,8 +70,8 @@ def get_song_infos(id):
         print song_info['mp3url']
     return song_infos
 
-# ÓÃWGETÏÂÔØ¸èµ¥ÖĞµÄ¸èÇú£¬download songs in playlist by wget
-# ID    Îª¸èµ¥id
+# ç”¨WGETä¸‹è½½æ­Œå•ä¸­çš„æ­Œæ›²ï¼Œdownload songs in playlist by wget
+# ID    ä¸ºæ­Œå•id
 # WGET  wget.download(url, filename or directory)
 def download_playlist(id):
     song_infos = get_song_infos(id)

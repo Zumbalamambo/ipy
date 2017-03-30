@@ -1,5 +1,5 @@
-#!/usr/bin/env python2
-# vim: set fileencoding=utf8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import re
 import sys

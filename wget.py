@@ -1,10 +1,10 @@
-#!/usr/bin/env python2
-# vim: set file encoding=gbk
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import time
 import wget
 
-# ÓÃWGETÏÂÔØÁ´½Ó
+# ï¿½ï¿½WGETï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 # WGET  wget.download(url, filename or directory)
 
 url = 'https://github.com/ShareX/ShareX/releases/download/v11.4.1/ShareX-portable.zip'

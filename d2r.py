@@ -1,20 +1,20 @@
-#!/usr/bin/env python2
-# vim: set file encoding=gbk
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import base64
 
 '''
-ÎÄµµ£ºÒ»¼üÏÂÔØµ½Ğ¡Ã×Â·ÓÉÆ÷
-apiµØÖ·: https://d.miwifi.com/d2r/?url=_Base64_&name=_name_&src=_src_
+æ–‡æ¡£ï¼šä¸€é”®ä¸‹è½½åˆ°å°ç±³è·¯ç”±å™¨
+apiåœ°å€: https://d.miwifi.com/d2r/?url=_Base64_&name=_name_&src=_src_
 
-²ÎÊıÁĞ±í
-url:    Base64±àÂëµÄÏÂÔØµØÖ·¡£Ö§³ÖµÄÁ´½ÓÀàĞÍ£ºhttp¡¢ftp¡¢BT´ÅÁ¦Á´½Ó¡¢µçÂ¿ed2k¡¢Ñ¸À×thunder¡£
-×¢£º    ÕâÀïÊ¹ÓÃµÄBase64Ëã·¨Çë²Î¿¼RCF 4648ÀïµÄ¡¶Base 64 Encoding with URL and Filename Safe Alphabet¡·¡£²Î¿¼ÊµÏÖ£ºbase64.js¡£
-name:   ĞèÒªÏÂÔØµÄÎÄ¼şÃû£¨¿ÉÑ¡£©¡£
-src:    À´Ô´´úÂë£¨¿ÉÑ¡£©¡£
+å‚æ•°åˆ—è¡¨
+url:    Base64ç¼–ç çš„ä¸‹è½½åœ°å€ã€‚æ”¯æŒçš„é“¾æ¥ç±»å‹ï¼šhttpã€ftpã€BTç£åŠ›é“¾æ¥ã€ç”µé©´ed2kã€è¿…é›·thunderã€‚
+æ³¨ï¼š    è¿™é‡Œä½¿ç”¨çš„Base64ç®—æ³•è¯·å‚è€ƒRCF 4648é‡Œçš„ã€ŠBase 64 Encoding with URL and Filename Safe Alphabetã€‹ã€‚å‚è€ƒå®ç°ï¼šbase64.jsã€‚
+name:   éœ€è¦ä¸‹è½½çš„æ–‡ä»¶åï¼ˆå¯é€‰ï¼‰ã€‚
+src:    æ¥æºä»£ç ï¼ˆå¯é€‰ï¼‰ã€‚
 
 example
-url: http://v.gorouter.info/20131204/Ğ¡Ã×µÄÒ»Ìì.mp4
+url: http://v.gorouter.info/20131204/å°ç±³çš„ä¸€å¤©.mp4
 api: http://d.miwifi.com/d2r/?url=aHR0cDovL3YuZ29yb3V0ZXIuaW5mby8yMDEzMTIwNC_lsI_nsbPnmoTkuIDlpKkubXA0&src=demo
 
 '''
@@ -24,7 +24,7 @@ def d2r(url):
     url2Base64 = "http://d.miwifi.com/d2r/?url=" + base64.encodestring(url)
     print url2Base64
 
-url = 'http://v.gorouter.info/20131204/Ğ¡Ã×µÄÒ»Ìì.mp4'
+url = 'http://v.gorouter.info/20131204/å°ç±³çš„ä¸€å¤©.mp4'
 print url
 d2r(url)
 

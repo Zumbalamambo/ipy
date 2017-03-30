@@ -1,5 +1,5 @@
-#!/usr/bin/env python2
-# vim: set file encoding=gbk
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import os
 import os.path
@@ -7,8 +7,8 @@ import os.path
 
 rootdir = 'C:/Users/shenbo/Pictures/tiny/'
 
-# Ö¸Ã÷±»±éÀúµÄÎÄ¼ş¼Ğ
-#Èı¸ö²ÎÊı£º·Ö±ğ·µ»Ø1.¸¸Ä¿Â¼ 2.ËùÓĞÎÄ¼ş¼ĞÃû×Ö£¨²»º¬Â·¾¶£© 3.ËùÓĞÎÄ¼şÃû×Ö
+# æŒ‡æ˜è¢«éå†çš„æ–‡ä»¶å¤¹
+#ä¸‰ä¸ªå‚æ•°ï¼šåˆ†åˆ«è¿”å›1.çˆ¶ç›®å½• 2.æ‰€æœ‰æ–‡ä»¶å¤¹åå­—ï¼ˆä¸å«è·¯å¾„ï¼‰ 3.æ‰€æœ‰æ–‡ä»¶åå­—
 
 for parent, dirnames, filenames in os.walk(rootdir):
     for filename in filenames:
