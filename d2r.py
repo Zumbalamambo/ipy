@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import base64
+import requests
 
 '''
 文档：一键下载到小米路由器
@@ -19,12 +20,15 @@ api: http://d.miwifi.com/d2r/?url=aHR0cDovL3YuZ29yb3V0ZXIuaW5mby8yMDEzMTIwNC_lsI
 
 '''
 
+api = 'https://d.miwifi.com/d2r/'
 
-def d2r(url):
-    url2Base64 = "http://d.miwifi.com/d2r/?url=" + base64.encodestring(url)
-    print url2Base64
+url = 'http://v.gorouter.info/20131204/小米的一天.mp4'.encode(encoding='utf_8')
+print(url)
 
-url = 'http://v.gorouter.info/20131204/小米的一天.mp4'
-print url
-d2r(url)
+post_data = {'url': base64.b64encode(url)}
+print(post_data)
+
+r = requests.post(api, data=post_data, verify=False)
+
+print(r.text)
 
