@@ -57,6 +57,6 @@ finally:
 
     ret = os.write(fd, bytes(hosts, 'UTF-8'))
     print(ret)
-    fd.close()
+    os.close(fd)
 
     input('the host file has been saved on your desktop!')
