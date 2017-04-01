@@ -8,7 +8,10 @@ shenbo@hotmail.com
 @ 2013.01.20
 """
 
-import os, sys, urllib2, time
+import os
+import sys
+import requests
+import time
 
 # kk hosts
 kk_hosts = '# kk hosts start\n' \
@@ -19,33 +22,41 @@ kk_hosts = '# kk hosts start\n' \
 ipv4_url = 'https://raw.githubusercontent.com/racaljk/hosts/master/hosts'
 # windows hosts file dir
 hosts_file_dir = 'C:/Windows/System32/drivers/etc/hosts'
+desktop_dir = 'C:/Users/shenbo/Desktop/hosts'
 
-print u'loading hosts file...\n'
+print('loading hosts file...\n')
 
 try:
-    response = urllib2.urlopen(ipv4_url)
-    ipv4_hosts = response.read()
-    print u'got ipv4 hosts!\n'
+    req = requests.get(ipv4_url)
+    ipv4_hosts = req.content.decode(encoding='utf-8')
+    print('got ipv4 hosts!\n')
 
-except urllib2.HTTPError as e:
-    print e
+except requests.HTTPError as e:
+    print(e)
     raw_input()
 
-t = time.strftime('%Y-%m-%d, %H:%M:%S',time.localtime(time.time()))
+t = time.strftime('%Y-%m-%d, %H:%M:%S', time.localtime(time.time()))
 
 hosts = kk_hosts + ipv4_hosts + '\n\n##hosts updated @ ' + t
+print(hosts)
 
 try:
-    f = file(hosts_file_dir, 'w')
-    f.write(hosts)
-    f.close()
-    raw_input('hosts updated @ ' + t + ' !\npress enter!')
-except IOError as e:
-    print e
-finally:
-    f = file('C:\Users\shenbo\Desktop\hosts', 'w')
-    f.write(hosts)
-    print 'find the host file on your desktop!'
-    f.close()
-    raw_input()
+    fd = os.open(hosts_file_dir, os.O_RDWR | os.O_CREAT)
 
+    ret = os.write(fd, bytes(hosts, 'UTF-8'))
+    print(ret)
+    os.close(fd)
+
+    input('hosts updated @ ' + t + ' !\npress enter!')
+
+except IOError as e:
+    print(e)
+
+finally:
+    fd = os.open(desktop_dir, os.O_RDWR | os.O_CREAT)
+
+    ret = os.write(fd, bytes(hosts, 'UTF-8'))
+    print(ret)
+    fd.close()
+
+    input('the host file has been saved on your desktop!')
