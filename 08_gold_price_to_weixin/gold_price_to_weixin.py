@@ -53,7 +53,7 @@ if __name__ == '__main__':
 
     while True:
         gp = gold_price()
-        print(gp)
+        # print(gp)
         # 发送消息给自己和欣欣
         bot.self.send(gp)
         # xinxin.send(gp)

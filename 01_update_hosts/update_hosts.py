@@ -10,10 +10,11 @@ shenbo@hotmail.com
 
 import requests
 
-kk_hosts = '# kk 01_update_hosts start\n' \
+kk_hosts = '# kk hosts start\n' \
            '172.18.1.30 ekp.aerosun.cn\n' \
            '172.18.1.32 kk.aerosun.cn\n' \
-           '# kk 01_update_hosts end\n\n'
+           '# kk hosts end\n\n' \
+           '127.0.0.1 xmind.net\n\n'
 
 ipv4_url = 'https://raw.githubusercontent.com/racaljk/hosts/master/hosts'
 
