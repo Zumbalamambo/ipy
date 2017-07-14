@@ -35,9 +35,9 @@ def main():
     print(post_data)
 
     # requests
-    r = requests.post(API, data=post_data, headers=headers, verify=False)
-
-    print(r.text)
+    # r = requests.post(API, data=post_data, headers=headers, verify=False)
+    #
+    # print(r.text)
 
 if __name__ == '__main__':
     main()

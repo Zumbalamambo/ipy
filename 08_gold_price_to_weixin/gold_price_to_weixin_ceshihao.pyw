@@ -8,7 +8,9 @@ App_id = 'wxad3edefbef3f17ed'
 
 App_secret = 'c2653ec7375e8c18ca5852c3e51901bf'
 
-Open_id = 'optBY1qs60rcq2ds-hQXg2QoCheg'
+Open_id = 'optBY1qs60rcq2ds-hQXg2QoCheg' #xixishuiba
+Open_id2 = 'optBY1qibJd5BE8936qSgL6gAKvY' #xinxin
+
 
 Template_id = '6uCOppBXxH94e2PBWVNl6xuTw9tSJYyHTaH7uUm18h4'
 
@@ -30,12 +32,12 @@ def get_access_token(id, secret):
     return access_token
 
 
-def send_text_msg(token, msg):
+def send_text_msg(token, userid, msg):
     send_url = 'https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token='
 
     send_url += token
 
-    d = dict(touser=Open_id, msgtype='text', text=dict(content=msg))
+    d = dict(touser=userid, msgtype='text', text=dict(content=msg))
 
     body = json.dumps(d, indent=4)
     print(body)
@@ -45,7 +47,7 @@ def send_text_msg(token, msg):
     print(jj)
 
 
-def send_template_msg(token, price, swing, swingrange):
+def send_template_msg(token, userid, price, swing, swingrange):
     send_url = 'https://api.weixin.qq.com/cgi-bin/message/template/send?access_token='
 
     send_url += token
@@ -55,7 +57,7 @@ def send_template_msg(token, price, swing, swingrange):
             'swingrange': {'value': swingrange, 'color': '#173177'}
             }
 
-    d = {'touser': Open_id,
+    d = {'touser': userid,
          'template_id': Template_id,
          'url': 'http://www.dyhjw.com/hjtd/',
          'topcolor':'#FF0000',
@@ -115,12 +117,13 @@ if __name__ == '__main__':
     access_token = get_access_token(App_id, App_secret)
     # access_token = '_laZISLWl8fdCphcMzp66rUGas2KVu8NiqeztRYviLMR1L0FRRrLKel3WFmzJIYSlTJaZsActOgOd9G6zv21mc59GgES884viUFKUPxx_de1rJH0nNTrNllm0GYVTdQdTFTgABAZLZ'
 
-    # send_text_msg(access_token, 'hello')
+    # send_text_msg(access_token, Open_id, 'hello')
 
     p = gold_price()
 
-    send_template_msg(access_token, p[0], p[1], p[2])
-
+    send_template_msg(access_token, Open_id, p[0], p[1], p[2])
+    send_template_msg(access_token, Open_id2, p[0], p[1], p[2])
+    
     # get_users(access_token)
 
 
