@@ -6,9 +6,7 @@
 
 https://raw.githubusercontent.com/racaljk/hosts/master/hosts
 
-- windows cmd:
- 
-`notepad c:/windows/system32/drivers/etc/hosts`
+- windows cmd: `notepad c:/windows/system32/drivers/etc/hosts`
 
 ---
 
@@ -44,7 +42,7 @@ IDM
 
 ### **07_download2miwifi** -- 发送下载链接到小米wifi
 
-### **08_gold_price_to_weixin** -- 获取黄金T+D实时价格，发送到微信
+### **08_gold_price2weixin** -- 获取黄金T+D实时价格，发送到微信
 
 - 数据来源
 

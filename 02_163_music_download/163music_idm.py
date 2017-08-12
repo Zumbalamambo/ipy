@@ -1,12 +1,15 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 import requests
 import hashlib
 import subprocess
 import time
 import json
 import base64
+
+
+headers = {
+    'Cookie': 'os=uwp; osver=10.0.10586.318; appver=1.2.1;',
+    'Referer': 'http://music.163.com/'
+}
 
 
 # 加密歌曲ID
@@ -38,14 +41,17 @@ def get_mp3url(i):
     return None
 
 
-# 获取歌单里的所有歌曲信息
-def get_song_infos(playlist_id):
-    url = 'http://music.163.com/api/playlist/detail?id={}'
+# 歌单API
+# POST http://music.163.com/weapi/v3/playlist/detail?csrf_token=
+def get_playlist(playlist_id):
+    api = 'http://music.163.com/weapi/v3/playlist/detail?csrf_token='
 
-    url_playlist = url.format(playlist_id)
+    params = {"id": playlist_id}
 
-    songs_json = requests.get(url_playlist).json()
+    songs_json = requests.post(api, para).json()
+
     songs_list = songs_json['result']['tracks']
+
     print('>> 歌单中共有{}首歌曲...'.format(len(songs_list)))
 
     song_infos = []

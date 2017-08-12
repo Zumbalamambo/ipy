@@ -8,7 +8,7 @@ sio.whosmat
 '''
 
 
-mat_contents = sio.loadmat('baseline_wacv.mat')
+mat_contents = sio.loadmat('matlab/scores_cnn_all.mat')
 
 print(mat_contents)
 
