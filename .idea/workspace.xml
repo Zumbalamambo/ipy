@@ -1,38 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca776f18-9e48-450a-a4b4-85c479bd7c3a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/baseline_wacv.mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/baseline_cnn.mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/baseline_wacv.mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/filter_mc.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/filter_median.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/generate_roc.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/ks_stat_exp.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/parse_all_scores.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/parse_texture_scores.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/read_scores_file.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/read_scores_file2.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_chipped.mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_cnn_all.mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_cnn_clear.mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_cnn_switch.mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_crumbling.mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_file_name.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_file_name2.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show2_roc.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show2_scores.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show_far.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show_far1.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show_far2.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show_far3.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show_roc.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show_scores.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/test_filter.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/test_parse.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/scores_cnn_all.mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/track_data.py" afterPath="" />
+    <list default="true" id="ca776f18-9e48-450a-a4b4-85c479bd7c3a" name="Default" comment="update">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/01_update_hosts/hosts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/01_update_hosts/update_hosts.spec" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05_icalendar/ical test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/08_gold_price_to_weixin/gold_price_to_weixin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/08_gold_price_to_weixin/gold_price_to_weixin_ceshihao.pyw" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/08_gold_price_to_weixin/gold_price_to_weixin_ftqq.pyw" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bat/auto_login_windows.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bat/ip_config.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/api.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/downloader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/encrypt.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/file_util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/start.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/preview.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/requirements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/setup.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/08_gold_price2weixin/gp_ceshihao.pyw" afterPath="$PROJECT_DIR$/08_gold_price2weixin/gp_ceshihao.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored mask="*.pkl" />
@@ -89,12 +80,14 @@
         <option value="$PROJECT_DIR$/pywork/track_inspect/mat" />
         <option value="$PROJECT_DIR$/pywork/track_inspect/track_data.py" />
         <option value="$PROJECT_DIR$/03_magic_squre/ms.py" />
+        <option value="$PROJECT_DIR$/01_update_hosts/为" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="960" />
-    <option name="height" value="772" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -126,7 +119,42 @@
             <path>
               <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
               <item name="ipy" type="462c0819:PsiDirectoryNode" />
+              <item name="01_update_hosts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipy" type="462c0819:PsiDirectoryNode" />
+              <item name="05_icalendar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipy" type="462c0819:PsiDirectoryNode" />
+              <item name="06_ftp_server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipy" type="462c0819:PsiDirectoryNode" />
+              <item name="07_download2miwifi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipy" type="462c0819:PsiDirectoryNode" />
+              <item name="08_gold_price2weixin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipy" type="462c0819:PsiDirectoryNode" />
               <item name="pywork" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipy" type="462c0819:PsiDirectoryNode" />
+              <item name="tensorflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipy" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -380,6 +408,7 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2284041" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.342812" sideWeight="0.5127119" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3949447" sideWeight="0.48728815" order="2" side_tool="false" content_ui="tabs" />
@@ -395,7 +424,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -469,10 +497,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/instapush/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/08_gold_price_to_weixin/instapush.py" />
-    <entry file="file://$PROJECT_DIR$/08_gold_price_to_weixin/weixin_ceshi.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/json/__init__.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/leancloud/__init__.py" />
     <entry file="file://$PROJECT_DIR$/08_gold_price_to_weixin/leancloud.py" />
     <entry file="file://$PROJECT_DIR$/08_gold_price_to_weixin/README.md" />
@@ -510,20 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
           <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05_icalendar/ical test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-764">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -696,6 +706,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_update_hosts/为">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_icalendar/ical test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-662">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/新建文本文档.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-332">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_icalendar/ical_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-752">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
