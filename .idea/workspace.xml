@@ -2,8 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca776f18-9e48-450a-a4b4-85c479bd7c3a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ipy.iml" afterPath="$PROJECT_DIR$/.idea/ipy.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/baseline_wacv.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/baseline_cnn.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/baseline_wacv.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/filter_mc.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/filter_median.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/generate_roc.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/ks_stat_exp.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/parse_all_scores.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/parse_texture_scores.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/read_scores_file.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/read_scores_file2.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_chipped.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_cnn_all.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_cnn_clear.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_cnn_switch.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_crumbling.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_file_name.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/scores_file_name2.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show2_roc.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show2_scores.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show_far.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show_far1.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show_far2.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show_far3.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show_roc.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/show_scores.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/test_filter.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/matlab/test_parse.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/scores_cnn_all.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pywork/track_inspect/track_data.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored mask="*.pkl" />
@@ -15,18 +44,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mnist_pre.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tensorflow/mnist_pre.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,8 +114,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,7 +126,7 @@
             <path>
               <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
               <item name="ipy" type="462c0819:PsiDirectoryNode" />
-              <item name="tensorflow" type="462c0819:PsiDirectoryNode" />
+              <item name="pywork" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -359,16 +377,16 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2284041" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2284041" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.342812" sideWeight="0.5127119" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3949447" sideWeight="0.48728815" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3949447" sideWeight="0.48728815" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59569895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60967743" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60967743" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -451,7 +469,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/instapush/instapush.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/instapush/__init__.py" />
     <entry file="file://$PROJECT_DIR$/08_gold_price_to_weixin/instapush.py" />
     <entry file="file://$PROJECT_DIR$/08_gold_price_to_weixin/weixin_ceshi.py" />
@@ -626,9 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#23#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -646,9 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#88#111#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,9 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,16 +681,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09_ip_config_bat/gen_ip_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow/mnist_pre.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
