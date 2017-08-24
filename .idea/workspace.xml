@@ -2,28 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca776f18-9e48-450a-a4b4-85c479bd7c3a" name="Default" comment="update">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01_update_hosts/hosts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01_update_hosts/update_hosts.spec" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05_icalendar/ical test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/08_gold_price_to_weixin/gold_price_to_weixin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/08_gold_price_to_weixin/gold_price_to_weixin_ceshihao.pyw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/08_gold_price_to_weixin/gold_price_to_weixin_ftqq.pyw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bat/auto_login_windows.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bat/ip_config.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/api.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/config.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/constants.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/downloader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/encrypt.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/file_util.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/ncm/start.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/preview.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/requirements.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netease-cloud-music-dl-master/setup.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/08_gold_price2weixin/gp_ceshihao.pyw" afterPath="$PROJECT_DIR$/08_gold_price2weixin/gp_ceshihao.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pip source url.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/新建文本文档.txt" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/01_update_hosts/update_hosts.py" afterPath="$PROJECT_DIR$/update_hosts/update_hosts.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/163music_idm.py" afterPath="$PROJECT_DIR$/netese_music_download/163music_idm.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/netease-cloud-music-dl-master/LICENSE.txt" afterPath="$PROJECT_DIR$/netese_music_download/netease-cloud-music-dl-master/LICENSE.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/netease-cloud-music-dl-master/README.md" afterPath="$PROJECT_DIR$/netese_music_download/netease-cloud-music-dl-master/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/netease-cloud-music-dl-master/ncm/__init__.py" afterPath="$PROJECT_DIR$/netese_music_download/netease-cloud-music-dl-master/ncm/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/netease-cloud-music-dl-master/ncm/api.py" afterPath="$PROJECT_DIR$/netese_music_download/netease-cloud-music-dl-master/ncm/api.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/netease-cloud-music-dl-master/ncm/config.py" afterPath="$PROJECT_DIR$/netese_music_download/netease-cloud-music-dl-master/ncm/config.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/netease-cloud-music-dl-master/ncm/constants.py" afterPath="$PROJECT_DIR$/netese_music_download/netease-cloud-music-dl-master/ncm/constants.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/netease-cloud-music-dl-master/ncm/downloader.py" afterPath="$PROJECT_DIR$/netese_music_download/netease-cloud-music-dl-master/ncm/downloader.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/netease-cloud-music-dl-master/ncm/encrypt.py" afterPath="$PROJECT_DIR$/netese_music_download/netease-cloud-music-dl-master/ncm/encrypt.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/netease-cloud-music-dl-master/ncm/file_util.py" afterPath="$PROJECT_DIR$/netese_music_download/netease-cloud-music-dl-master/ncm/file_util.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/netease-cloud-music-dl-master/ncm/start.py" afterPath="$PROJECT_DIR$/netese_music_download/netease-cloud-music-dl-master/ncm/start.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/netease-cloud-music-dl-master/preview.gif" afterPath="$PROJECT_DIR$/netese_music_download/netease-cloud-music-dl-master/preview.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/netease-cloud-music-dl-master/requirements.txt" afterPath="$PROJECT_DIR$/netese_music_download/netease-cloud-music-dl-master/requirements.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/02_163_music_download/netease-cloud-music-dl-master/setup.py" afterPath="$PROJECT_DIR$/netese_music_download/netease-cloud-music-dl-master/setup.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/03_magic_squre/all 4-4 magic-squre" afterPath="$PROJECT_DIR$/magic_squre/all 4-4 magic-squre" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/03_magic_squre/ms.py" afterPath="$PROJECT_DIR$/magic_squre/ms.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/04_bz_download/chadoc_bz_idm.py" afterPath="$PROJECT_DIR$/bz_download/chadoc_bz_idm.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/05_icalendar/ical_test.py" afterPath="$PROJECT_DIR$/icalendar/ical_test.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/05_icalendar/shenbo.ics" afterPath="$PROJECT_DIR$/icalendar/shenbo.ics" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/06_ftp_server/ftp.py" afterPath="$PROJECT_DIR$/ftp_server/ftp.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/07_download2miwifi/d2r.py" afterPath="$PROJECT_DIR$/download2miwifi/d2r.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/07_download2miwifi/send2miwifi.py" afterPath="$PROJECT_DIR$/download2miwifi/send2miwifi.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/08_gold_price2weixin/gold_price.py" afterPath="$PROJECT_DIR$/gold_price2weixin/gold_price.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/08_gold_price2weixin/gp_ceshihao.py" afterPath="$PROJECT_DIR$/gold_price2weixin/gp_ceshihao.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/08_gold_price2weixin/gp_ftqq.py" afterPath="$PROJECT_DIR$/gold_price2weixin/gp_ftqq.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/08_gold_price2weixin/gp_wxpy.py" afterPath="$PROJECT_DIR$/gold_price2weixin/gp_wxpy.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/09_ip_config_bat/gen_ip_config.py" afterPath="$PROJECT_DIR$/ip_config_bat/gen_ip_config.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/09_ip_config_bat/ip.bat" afterPath="$PROJECT_DIR$/ip_config_bat/ip.bat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/09_ip_config_bat/ip.txt" afterPath="$PROJECT_DIR$/ip_config_bat/ip.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/09_ip_config_bat/余正平 172.18.66.232.bat" afterPath="$PROJECT_DIR$/ip_config_bat/余正平 172.18.66.232.bat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/09_ip_config_bat/沈博 172.18.66.230.bat" afterPath="$PROJECT_DIR$/ip_config_bat/沈博 172.18.66.230.bat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pi.md" afterPath="$PROJECT_DIR$/raspi config.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored mask="*.pkl" />
@@ -35,7 +49,52 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ex1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cs229_ml_py/machine-learning-ex1/ex1/ex1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ex1.m" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cs229_ml_py/machine-learning-ex1/ex1/ex1.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="82" column="66" lean-forward="true" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mnist_test_1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tensorflow/mnist_test_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="29" />
+              <folding>
+                <element signature="e#88#111#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tensorflow/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,6 +140,9 @@
         <option value="$PROJECT_DIR$/pywork/track_inspect/track_data.py" />
         <option value="$PROJECT_DIR$/03_magic_squre/ms.py" />
         <option value="$PROJECT_DIR$/01_update_hosts/为" />
+        <option value="$PROJECT_DIR$/新建文本文档.txt" />
+        <option value="$PROJECT_DIR$/raspi config.md" />
+        <option value="$PROJECT_DIR$/cs229_ml_py/machine-learning-ex1/ex1/ex1.py" />
       </list>
     </option>
   </component>
@@ -107,7 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -119,47 +180,31 @@
             <path>
               <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
               <item name="ipy" type="462c0819:PsiDirectoryNode" />
-              <item name="01_update_hosts" type="462c0819:PsiDirectoryNode" />
+              <item name="cs229_ml_py" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
               <item name="ipy" type="462c0819:PsiDirectoryNode" />
-              <item name="05_icalendar" type="462c0819:PsiDirectoryNode" />
+              <item name="cs229_ml_py" type="462c0819:PsiDirectoryNode" />
+              <item name="machine-learning-ex1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
               <item name="ipy" type="462c0819:PsiDirectoryNode" />
-              <item name="06_ftp_server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ipy" type="462c0819:PsiDirectoryNode" />
-              <item name="07_download2miwifi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ipy" type="462c0819:PsiDirectoryNode" />
-              <item name="08_gold_price2weixin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ipy" type="462c0819:PsiDirectoryNode" />
-              <item name="pywork" type="462c0819:PsiDirectoryNode" />
+              <item name="cs229_ml_py" type="462c0819:PsiDirectoryNode" />
+              <item name="machine-learning-ex1" type="462c0819:PsiDirectoryNode" />
+              <item name="ex1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
               <item name="ipy" type="462c0819:PsiDirectoryNode" />
               <item name="tensorflow" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ipy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ipy" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,7 +233,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mnist_pre">
+  <component name="RunManager" selected="Python.ex1">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,6 +297,23 @@
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
+    </configuration>
+    <configuration name="ex1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cs229_ml_py/machine-learning-ex1/ex1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ipy" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cs229_ml_py/machine-learning-ex1/ex1/ex1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <configuration name="linear_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -321,37 +383,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="track_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pywork/track_inspect" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ipy" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pywork/track_inspect/track_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.track_data" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ms" />
-      <item index="2" class="java.lang.String" itemvalue="Python.mnist_pro" />
-      <item index="3" class="java.lang.String" itemvalue="Python.linear_model" />
-      <item index="4" class="java.lang.String" itemvalue="Python.mnist_pre" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ms" />
+      <item index="1" class="java.lang.String" itemvalue="Python.mnist_pro" />
+      <item index="2" class="java.lang.String" itemvalue="Python.linear_model" />
+      <item index="3" class="java.lang.String" itemvalue="Python.mnist_pre" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ex1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.mnist_pre" />
-        <item index="1" class="java.lang.String" itemvalue="Python.mnist_pro" />
-        <item index="2" class="java.lang.String" itemvalue="Python.linear_model" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ms" />
-        <item index="4" class="java.lang.String" itemvalue="Python.track_data" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ex1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.mnist_pre" />
+        <item index="2" class="java.lang.String" itemvalue="Python.mnist_pro" />
+        <item index="3" class="java.lang.String" itemvalue="Python.linear_model" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ms" />
       </list>
     </recent_temporary>
   </component>
@@ -405,51 +450,30 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2284041" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23352855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.342812" sideWeight="0.5127119" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.342812" sideWeight="0.5127119" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2543444" sideWeight="0.48728815" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3949447" sideWeight="0.48728815" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59569895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59569895" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60967743" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5127119" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.48728815" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23093449" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21610169" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.80215055" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.m" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -468,12 +492,12 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/02_163_music_download/163music_idm.py</url>
+          <url>file://$PROJECT_DIR$/netese_music_download/163music_idm.py</url>
           <line>38</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/02_163_music_download/163music_idm.py</url>
+          <url>file://$PROJECT_DIR$/netese_music_download/163music_idm.py</url>
           <line>32</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
@@ -497,32 +521,16 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/leancloud/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/08_gold_price_to_weixin/leancloud.py" />
-    <entry file="file://$PROJECT_DIR$/08_gold_price_to_weixin/README.md" />
-    <entry file="file://$PROJECT_DIR$/03_magic_squre/README.md" />
-    <entry file="file://$PROJECT_DIR$/08_gold_price_to_weixin/gold_price_to_weixin_ceshihao.pyw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1440">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/08_gold_price_to_weixin/gold_price_to_weixin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03_magic_squre/all 4-4 magic-squre">
+    <entry file="file://$PROJECT_DIR$/08_gold_price_to_weixin/gold_price_to_weixin_ceshihao.pyw" />
+    <entry file="file://$PROJECT_DIR$/08_gold_price_to_weixin/gold_price_to_weixin.py" />
+    <entry file="file://$PROJECT_DIR$/magic_squre/all 4-4 magic-squre">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_update_hosts/update_hosts.py">
+    <entry file="file://$PROJECT_DIR$/update_hosts/update_hosts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-62">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="45" />
@@ -530,14 +538,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/04_bz_download/download_by_wget.py" />
-    <entry file="file://$PROJECT_DIR$/04_bz_download/chadoc_bz_idm.py">
+    <entry file="file://$PROJECT_DIR$/bz_download/chadoc_bz_idm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
           <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05_icalendar/shenbo.ics">
+    <entry file="file://$PROJECT_DIR$/icalendar/shenbo.ics">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -547,7 +555,7 @@
     <entry file="file://$PROJECT_DIR$/02_163_music_download/163music_wget.py" />
     <entry file="file://$PROJECT_DIR$/02_163_music_download/music.163.com.py" />
     <entry file="file://$PROJECT_DIR$/02_163_music_download/j.json" />
-    <entry file="file://$PROJECT_DIR$/07_download2miwifi/d2r.py">
+    <entry file="file://$PROJECT_DIR$/download2miwifi/d2r.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-206">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -573,7 +581,7 @@
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/encodings/ascii.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/encodings/cp866.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/encodings/punycode.py" />
-    <entry file="file://$PROJECT_DIR$/02_163_music_download/163music_idm.py">
+    <entry file="file://$PROJECT_DIR$/netese_music_download/163music_idm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
@@ -587,7 +595,7 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/hashlib.py" />
-    <entry file="file://$PROJECT_DIR$/07_download2miwifi/send2miwifi.py">
+    <entry file="file://$PROJECT_DIR$/download2miwifi/send2miwifi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="604">
           <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
@@ -608,21 +616,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pywork/track_inspect/track_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pywork/track_inspect/mat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pywork/track_inspect/track_data.py" />
+    <entry file="file://$PROJECT_DIR$/pywork/track_inspect/mat" />
     <entry file="file://$PROJECT_DIR$/test/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
@@ -641,7 +636,7 @@
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/numpy/lib/function_base.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2017.1/system/python_stubs/1389831056/builtins.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2017.1/system/python_stubs/1389831056/itertools.py" />
-    <entry file="file://$PROJECT_DIR$/03_magic_squre/ms.py">
+    <entry file="file://$PROJECT_DIR$/magic_squre/ms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
@@ -653,30 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow/mnist_test_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding>
-            <element signature="e#88#111#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow/tf_options.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -694,11 +665,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_ip_config_bat/gen_ip_config.py">
+    <entry file="file://$PROJECT_DIR$/ip_config_bat/gen_ip_config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -706,54 +676,100 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_update_hosts/为" />
+    <entry file="file://$PROJECT_DIR$/05_icalendar/ical test.py" />
+    <entry file="file://$PROJECT_DIR$/icalendar/ical_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-752">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pip source url.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_update_hosts/为">
+    <entry file="file://$PROJECT_DIR$/tensorflow/tf_options.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="45" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs229_ml_py/machine-learning-ex1/ex1/computeCost.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05_icalendar/ical test.py">
+    <entry file="file://$PROJECT_DIR$/raspi config.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-662">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="288">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/新建文本文档.txt">
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1120166012/numpy/core/multiarray.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="116">
+          <caret line="2227" column="4" lean-forward="false" selection-start-line="2227" selection-start-column="4" selection-end-line="2227" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-332">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="558">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pi.md">
+    <entry file="file://$PROJECT_DIR$/tensorflow/mnist_test_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="234">
+          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#88#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05_icalendar/ical_test.py">
+    <entry file="file://$PROJECT_DIR$/cs229_ml_py/machine-learning-ex1/ex1/ex1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-752">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="113">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs229_ml_py/machine-learning-ex1/ex1/ex1.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="82" column="66" lean-forward="true" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
           <folding />
         </state>
       </provider>
