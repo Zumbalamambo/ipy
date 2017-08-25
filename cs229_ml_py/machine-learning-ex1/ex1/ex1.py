@@ -18,14 +18,15 @@ plt.ylabel('Profit in $10,000s')
 
 
 # Create the model
-x = X
-W = tf.Variable(tf.zeros([1]))
+x_data = X
+y_data = Y
+w = tf.Variable(tf.zeros([1]))
 b = tf.Variable(tf.zeros([1]))
 
-y = W * x + b
+y_output = tf.multiply(w, x_data) + b
 
 # Minimize the mean squared errors.
-loss = tf.reduce_mean(tf.square(y - Y))
+loss = tf.reduce_mean(tf.square(y_output - y_data)) / 2
 optimizer = tf.train.GradientDescentOptimizer(0.01)
 train = optimizer.minimize(loss)
 
@@ -37,11 +38,16 @@ init = tf.global_variables_initializer()
 sess = tf.Session()
 sess.run(init)
 
+print(sess.run(w), sess.run(b), sess.run(loss))
+# loss expect to be 32.07.
+
+
+
 # Fit the line.
 for step in range(1500):
     sess.run(train)
     if step % 20 == 0:
-        print(step, sess.run(W), sess.run(b), sess.run(loss))
+        print(step, sess.run(w), sess.run(b), sess.run(loss))
 
-
-# Learns best fit is W: [0.1], b: [0.3]
+predict1 = 1 * sess.run(b)[0] + 3.5 * sess.run(w)[0]
+print(predict1)
