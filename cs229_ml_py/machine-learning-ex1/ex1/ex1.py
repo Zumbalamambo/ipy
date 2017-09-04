@@ -2,17 +2,24 @@ import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
+
 def linear_train(x, y):
     # Create the model
-    # x's shape: 1 * m;
-    # y's shape: 1 * m;
+    # x's shape: m * 1;
+    # y's shape: m * 1;
+
+    plt.scatter(x, y)
+    plt.xlabel('Population of City in 10,000s')
+    plt.ylabel('Profit in $10,000s')
+    # plt.show()
+    plt.ion()
 
     x_data = tf.Variable(x, dtype='float32')
     y_data = tf.Variable(y, dtype='float32')
     W = tf.Variable(tf.zeros([1, 1]))
-    b = tf.Variable(tf.zeros([1]))
+    b = tf.Variable(1.0)
 
-    y_output = tf.matmul(W, x_data) + b
+    y_output = tf.matmul(x_data, W) + b
 
     # Minimize the mean squared errors.
     loss = tf.reduce_mean(tf.square(y_output - y_data))
@@ -24,26 +31,21 @@ def linear_train(x, y):
     # Launch the graph.
     with tf.Session() as sess:
         sess.run(init)
-
-        for step in range(1500):
-            sess.run(train)
-
-            weights, bais, cost = sess.run([W, b, loss])
+        for step in range(1000):
+            _, we, ba, los, yo = sess.run([train, W, b, loss, y_output])
             if step % 20 == 0:
-                print(step, weights[0][0], bais[0], cost)
-        return weights[0][0], bais[0]
+                print(step, we[0][0], ba, los)
+                plt.cla()
+                plt.scatter(x, y)
+                plt.xlabel('Population of City in 10,000s')
+                plt.ylabel('Profit in $10,000s')
 
+                x_p = [min(x[:, 0]), max(x[:, 0])]
+                y_p = np.multiply(x_p, we[0][0]) + ba
+                plt.plot(x_p, y_p, 'y-')
 
-def plot_data(x, y, w = 0.0, b = 0.0):
-    plt.plot(x, y, 'rx')
-    plt.xlabel('Population of City in 10,000s')
-    plt.ylabel('Profit in $10,000s')
-
-    x_p = [min(x), max(x)]
-    y_p = np.multiply(w, x_p) + b
-    plt.plot(x_p, y_p, '-')
-
-    plt.show()
+                plt.text(10, 20, 'Loss=%.4f' % los)
+                plt.pause(0.1)
 
 
 if __name__ == "__main__":
@@ -55,8 +57,4 @@ if __name__ == "__main__":
 
     m = len(X)
 
-    # plot_data(X, Y)
-
-    w, b = linear_train(np.reshape(X, (1, m)), np.reshape(Y, (1, m)))
-
-    plot_data(X, Y, w, b)
+    linear_train(X.reshape(m, 1), Y.reshape(m, 1))
