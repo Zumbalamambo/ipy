@@ -2,52 +2,61 @@ import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
-# load data
-data = np.loadtxt('ex1data1.txt', dtype=float, delimiter=',')
+def linear_train(x, y):
+    # Create the model
+    # x's shape: 1 * m;
+    # y's shape: 1 * m;
 
-X = data[:, 0]
-Y = data[:, 1]
-assert len(X) == len(Y)
+    x_data = tf.Variable(x, dtype='float32')
+    y_data = tf.Variable(y, dtype='float32')
+    W = tf.Variable(tf.zeros([1, 1]))
+    b = tf.Variable(tf.zeros([1]))
 
-m = len(X)
+    y_output = tf.matmul(W, x_data) + b
 
-plt.plot(X, Y, 'rx')
-plt.xlabel('Population of City in 10,000s')
-plt.ylabel('Profit in $10,000s')
-# plt.show()
+    # Minimize the mean squared errors.
+    loss = tf.reduce_mean(tf.square(y_output - y_data))
+    optimizer = tf.train.GradientDescentOptimizer(0.01)
+    train = optimizer.minimize(loss)
 
+    init = tf.global_variables_initializer()
 
-# Create the model
-x_data = X
-y_data = Y
-w = tf.Variable(tf.zeros([1]))
-b = tf.Variable(tf.zeros([1]))
+    # Launch the graph.
+    with tf.Session() as sess:
+        sess.run(init)
 
-y_output = tf.multiply(w, x_data) + b
+        for step in range(1500):
+            sess.run(train)
 
-# Minimize the mean squared errors.
-loss = tf.reduce_mean(tf.square(y_output - y_data)) / 2
-optimizer = tf.train.GradientDescentOptimizer(0.01)
-train = optimizer.minimize(loss)
-
-# Before starting, initialize the variables. We will 'run' this first
-
-init = tf.global_variables_initializer()
-
-# Launch the graph.
-sess = tf.Session()
-sess.run(init)
-
-print(sess.run(w), sess.run(b), sess.run(loss))
-# loss expect to be 32.07.
+            weights, bais, cost = sess.run([W, b, loss])
+            if step % 20 == 0:
+                print(step, weights[0][0], bais[0], cost)
+        return weights[0][0], bais[0]
 
 
+def plot_data(x, y, w = 0.0, b = 0.0):
+    plt.plot(x, y, 'rx')
+    plt.xlabel('Population of City in 10,000s')
+    plt.ylabel('Profit in $10,000s')
 
-# Fit the line.
-for step in range(1500):
-    sess.run(train)
-    if step % 20 == 0:
-        print(step, sess.run(w), sess.run(b), sess.run(loss))
+    x_p = [min(x), max(x)]
+    y_p = np.multiply(w, x_p) + b
+    plt.plot(x_p, y_p, '-')
 
-predict1 = 1 * sess.run(b)[0] + 3.5 * sess.run(w)[0]
-print(predict1)
+    plt.show()
+
+
+if __name__ == "__main__":
+    # load data
+    data = np.loadtxt('ex1data1.txt', dtype=float, delimiter=',')
+
+    X = data[:, 0]
+    Y = data[:, 1]
+
+    m = len(X)
+
+    # plot_data(X, Y)
+
+    w, b = linear_train(np.reshape(X, (1, m)), np.reshape(Y, (1, m)))
+
+    plot_data(X, Y, w, b)
