@@ -1,35 +1,46 @@
 import tensorflow as tf
 import numpy as np
+import matplotlib.pyplot as plt
 
-# Create 100 phony x, y data points in NumPy, y = x * 0.1 + 0.3
+# data
 x_data = np.random.rand(100).astype("float32")
-y_data = x_data * 0.1 + 0.3
+y_data = x_data * 0.1 + 0.3 + 0.01 * np.random.normal(0.0, 1.0, (100))
 
-# Try to find values for W and b that compute y_data = W * x_data + b
-# (We know that W should be 0.1 and b 0.3, but Tensorflow will
-# figure that out for us.)
+# plotdata
+plt.scatter(x_data, y_data)
+# plt.show()
+plt.ion()
+
+
+# tf model
 W = tf.Variable(tf.random_uniform([1], 1.0, 1.0))
 b = tf.Variable(tf.zeros([1]))
-y = W * x_data + b
+y_output = W * x_data + b
 
 # Minimize the mean squared errors.
-loss = tf.reduce_mean(tf.square(y - y_data))
+loss = tf.reduce_mean(tf.square(y_output - y_data))
 optimizer = tf.train.GradientDescentOptimizer(0.5)
 train = optimizer.minimize(loss)
 
-# Before starting, initialize the variables. We will 'run' this first
 
 init = tf.global_variables_initializer()
-
 # Launch the graph.
-sess = tf.Session()
-sess.run(init)
+with tf.Session() as sess:
+    sess.run(init)
 
-# Fit the line.
-for step in range(201):
-    sess.run(train)
-    if step % 20 == 0:
-        print(step, sess.run(W), sess.run(b))
+    # Fit the line.
+    for step in range(201):
+        _, we, ba, los, yo = sess.run([train, W, b, loss, y_output])
+        if step % 5 == 0:
+            print(step, sess.run(W), sess.run(b))
+            plt.cla()
+            plt.scatter(x_data, y_data)
 
+            x_p = [min(x_data), max(x_data)]
+            y_p = np.multiply(x_p, we[0]) + ba
+            plt.plot(x_p, y_p, 'y-')
 
-# Learns best fit is W: [0.1], b: [0.3]
+            plt.text(0.5, 0.5, 'Loss=%.4f' % los)
+            plt.pause(0.1)
+
+    # Learns best fit is W: [0.1], b: [0.3]

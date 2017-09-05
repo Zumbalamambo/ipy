@@ -5,7 +5,7 @@ import numpy as np
 
 # 生成100个点
 x_data = np.float32(np.random.rand(2, 100))
-y_data = np.dot([0.1, 0.2], x_data) + 0.3
+y_data = np.dot([0.1, 0.2], x_data) + 0.3 + 0.01 * np.random.normal(0.0, 1.0, (100))
 
 # 定义变量
 W = tf.Variable(tf.random_uniform([1, 2], -1.0, 1.0))
