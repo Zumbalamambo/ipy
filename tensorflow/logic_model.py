@@ -3,31 +3,26 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 
-def logic_train(x, y):
-    # Create the model
-    # x's shape: 2 * m;
-    # y's shape: 1 * m;
+def logic_train(x_, y_):
 
-    # print(x)
-    # print(y)
-
-    plt.scatter(x[:, 0], x[:, 1], c=y)
+    mx = len(x_)
+    # plt.scatter(x_[:, 0], x_[:, 1], c=y_)
     # plt.show()
     plt.ion()
 
-    # Create the model
-    x_data = tf.Variable(x, dtype='float32')
-    y_data = tf.Variable(y, dtype='float32')
-    W = tf.Variable(tf.random_normal((2, 1), 0.0, 0.01, dtype='float32'))
-    b = tf.Variable(0.1)
+    X = tf.placeholder(tf.float32)
+    y = tf.placeholder(tf.float32)
 
-    z = tf.matmul(x_data, W) + b
+    W = tf.Variable(tf.zeros([2, 1]))
+    b = tf.Variable([-2.0])
 
+    z = tf.matmul(X, tf.reshape(W, [-1, 1])) + b
     h = tf.sigmoid(z)
 
-    j = y_data * tf.log(h) + (1 - y_data) * tf.log(1 - h)
-
-    loss = tf.reduce_mean(-j)
+    j1 = y * tf.log(h)
+    j2 = (1 - y) * tf.log(1 - h)
+    j = (j1 + j2) / -mx
+    loss = tf.reduce_sum(j)
 
     optimizer = tf.train.GradientDescentOptimizer(0.001)
     train = optimizer.minimize(loss)
@@ -36,49 +31,31 @@ def logic_train(x, y):
 
     with tf.Session() as sess:
         sess.run(init)
-        print(sess.run(W))
-        print(sess.run(b))
-        print(np.average(sess.run(z)))
-        print(np.average(sess.run(h)))
-        print(np.average(sess.run(j)))
-        print(sess.run(loss))
-        print('----------')
+        feed_dict = {X: x_, y: y_}
 
-        for step in range(2):
-            sess.run(train)
-            if step % 1 == 0:
-                print(sess.run(W))
-                print(sess.run(b))
-                print(np.average(sess.run(z)))
-                print(np.average(sess.run(h)))
-                print(np.average(sess.run(j)))
-                print(sess.run(loss))
-                print('----------')
+        for step in range(100000):
+            sess.run(train, feed_dict)
+            if step % 1000 == 0:
+                w_, b_ = sess.run([W, b])
+                print(step, w_[0], w_[1], b_,)
 
-                # plt.cla()
-                # plt.scatter(x[:, 0], x[:, 1], c=y)
-                #
-                # x_p1 = min(x[0, :])
-                # x_p2 = max(x[0, :])
-                # y_p1 = (- ba - x_p1 * we[1][0]) / we[0][0]
-                # y_p2 = (- ba - x_p2 * we[1][0]) / we[0][0]
-                #
-                # # print([x_p1, y_p1], [x_p2, y_p2])
-                #
-                # plt.plot([x_p1, x_p2], [y_p1, y_p2], 'y-')
-                #
-                # plt.text(10, 20, 'Loss=%.4f' % los)
-                # plt.pause(0.001)
+                plt.cla()
+                plt.scatter(x_[:, 0], x_[:, 1], c=y_)
+
+                x_p = x_[0, :]
+                y_p = (- b_ - x_p * w_[1]) / w_[0]
+                plt.plot(x_p, y_p, 'y-')
+                plt.pause(0.001)
 
 
 if __name__ == "__main__":
     # load data
     data = np.loadtxt('logic_data1.txt', dtype=float, delimiter=',')
 
-    X = data[:, 0:2]
-    Y = data[:, 2]
+    data_x = data[:, 0:2]
+    data_y = data[:, 2]
 
-    assert len(X) == len(Y)
-    m = len(X)
+    assert len(data_x) == len(data_y)
+    m = len(data_x)
 
-    logic_train(X.reshape(m, 2), Y.reshape(m, 1))
+    logic_train(data_x.reshape(m, 2), data_y.reshape(m, 1))

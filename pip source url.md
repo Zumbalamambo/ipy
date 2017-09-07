@@ -7,5 +7,5 @@ http://mirrors.aliyun.com/pypi/simple/
 
 eg:
 '''
-pip install matplotlib -i https://mirrors.ustc.edu.cn/pypi/web/simple/
+pip install cv2 -i https://mirrors.ustc.edu.cn/pypi/web/simple/
 '''
