@@ -13,7 +13,7 @@ kk_hosts = '# kk hosts start\n' \
            '# kk hosts end\n\n' \
            '127.0.0.1 xmind.net\n\n'
 
-ipv4_url = 'https://raw.githubusercontent.com/racaljk/hosts/master/hosts'
+ipv4_url = 'https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts-files/hosts'
 
 hosts_file_dir = 'C:/Windows/System32/drivers/etc/hosts'
 

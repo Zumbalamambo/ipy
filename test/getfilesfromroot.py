@@ -27,7 +27,7 @@ for parent, dirnames, filenames in os.walk(rootdir):
                     os.rename(filedir, newfiledir)
                 except os.error as identifier:
                     print (identifier)
-                
+
                 
 
 input('press enter...')
