@@ -14,16 +14,12 @@ def blur(src):
     medianblur_dst = cv2.medianBlur(src, 5)
     bilateral_dst = cv2.bilateralFilter(src, 7, 75, 75)
 
-    plt.subplot(231), plt.imshow(src, 'gray'), plt.title('Original')
-    plt.xticks([]), plt.yticks([])  # 去掉坐标轴刻度
-    plt.subplot(232), plt.imshow(blur_dst, 'gray'), plt.title('Blur_Filtering')
-    plt.xticks([]), plt.yticks([])
-    plt.subplot(233), plt.imshow(gaussblur_dst, 'gray'), plt.title('Gaussian_Blur_Filtering')
-    plt.xticks([]), plt.yticks([])
-    plt.subplot(234), plt.imshow(medianblur_dst, 'gray'), plt.title('Median_Blur_Filtering')
-    plt.xticks([]), plt.yticks([])
-    plt.subplot(235), plt.imshow(bilateral_dst, 'gray'), plt.title('Bilateral_Blur_Filtering')
-    plt.xticks([]), plt.yticks([])
+    images = [src, blur_dst, gaussblur_dst, medianblur_dst, bilateral_dst]
+    titles = ['Original', 'Blur', 'Gaussian Blur', 'Median Blur', 'Bilateral Blur']
+    for i in range(5):
+        plt.subplot(2, 3, i + 1), plt.imshow(images[i])
+        plt.title(titles[i])
+        plt.xticks([]), plt.yticks([])
     plt.show()
     return
 
@@ -62,20 +58,17 @@ def slc(src):
     lpls = laplas(src)
     can = canny(src)
 
-    _, ths = cv2.threshold(sob, 70, 200, cv2.THRESH_BINARY)
+    ret, ths = cv2.threshold(sob, 100, 200, cv2.THRESH_BINARY)
+    ret2, ths2 = cv2.threshold(sob, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+    print(ret, ret2)
 
-    plt.subplot(231), plt.imshow(cv2.cvtColor(img_color, cv2.COLOR_BGR2RGB)), plt.title('Color')
-    plt.xticks([]), plt.yticks([])  # 去掉坐标轴刻度
-    plt.subplot(232), plt.imshow(src, 'gray'), plt.title('Gray')
-    plt.xticks([]), plt.yticks([])
-    plt.subplot(233), plt.imshow(sob, 'gray'), plt.title('Sobel')
-    plt.xticks([]), plt.yticks([])
-    plt.subplot(234), plt.imshow(lpls, 'gray'), plt.title('Laplas')
-    plt.xticks([]), plt.yticks([])
-    plt.subplot(235), plt.imshow(can, 'gray'), plt.title('Canny')
-    plt.xticks([]), plt.yticks([])
-    plt.subplot(236), plt.imshow(ths, 'gray'), plt.title('Sob_ths')
-    plt.xticks([]), plt.yticks([])
+    images = [src, sob, lpls, can, ths, ths2]
+    titles = ['Gray', 'Sobel', 'Laplas', 'can', 'ths', 'ths_otsu']
+    for i in range(6):
+        plt.subplot(2, 3, i + 1), plt.imshow(images[i], 'gray')
+        plt.title(titles[i])
+        plt.xticks([]), plt.yticks([])
+    plt.show()
 
     plt.show()
 
@@ -87,8 +80,10 @@ if __name__ == '__main__':
     img_color = cv2.imread('img/V/IMG_2512.jpg')
     # dst = cv2.GaussianBlur(img, (3, 3), 1.5)
 
+    # blur(cv2.cvtColor(img_color, cv2.COLOR_BGR2RGB))
+
     dst = cv2.bilateralFilter(img, 5, 75, 75)
-    slc(dst)
+    # slc(dst)
 
     res = cv2.equalizeHist(dst)
     slc(res)
